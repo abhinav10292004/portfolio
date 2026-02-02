@@ -5,10 +5,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal portfolio Website - Abinav K Subash</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/941e81509c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
-        
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            </div>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I’m <span class="name">Abinav</span><br> K Subash from Kerala, India</h1>
+            </div>
+        </div>
     </div>
+    <!-----------------about-------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" width="100px" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="para"> I am a passionate Computer Science engineering student with a strong interest in 
+                        software development and problem-solving. I enjoy working on projects that combine
+                        creativity and logic, from building efficient algorithms to designing user-friendly
+                        applications. My goal is to continuously learn new technologies, improve my skills,
+                        and contribute to impactful solutions in the field of technology. Outside of academics, 
+                        I enjoy exploring new tools, working on personal projects, and collaborating with others 
+                        to share knowledge and ideas.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><h3>Front-End Development</h3><p>Building responsive and dynamic websites</p></li>
+                            <li><h3>Back-End Development</h3><p>Creating secure and scalable systems</p></li>
+                            <li><h3>Full-Stack Development</h3><p>Combining front-end & back-end for complete Websites</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><h3>Fresher</h3><p>pursuing Btech Computer Science</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><h3>2022-2026</h3><p>Computer Science Engineering at SNMIMT Ernakulam</p></li>
+                            <li><h3>2020-2022</h3><p>Higher Secondary in Computer Science at Valapad</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------services------------------->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                   
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                    </svg>
+                    <h2>Web Design</h2>
+                    <p>ioyitt5rrydfchgvhougf6dtyrxcgjvgufdt</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop"></i>
+                    <h2>Front End</h2>
+                    <p>ioyitt5rrydfchgvhougf6dtyrxcgjvgufdt</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>Back End</h2>
+                    <p>ioyitt5rrydfchgvhougf6dtyrxcgjvgufdt</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!----------------------portfolio---------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>College Admission</h3>
+                        <p>This website is designed to simplify and streamline the college admission process.</p>
+                        <a href="https://www.linkedin.com/in/abhinav-k-subash-7a497a36b/details/projects/926024761/multiple-media-viewer/?profileId=ACoAAFvNWuwBuzFtLOaOV_Iqu5ok9fivA2OIdFw&treasuryMediaId=1751125198129">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6" width="10px">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                            </svg> -->
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <!-- <button class="btn">More...</button> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Expense Tracker</h3>
+                        <p>This web application helps track daily expenses and categories based on their type.</p>
+                        <a href="https://www.linkedin.com/in/abhinav-k-subash-7a497a36b/details/projects/406725512/multiple-media-viewer/?profileId=ACoAAFvNWuwBuzFtLOaOV_Iqu5ok9fivA2OIdFw&treasuryMediaId=1750605899188">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Image Search Engine</h3>
+                        <p>This web application allows users to search and retrieve images based on keywords.</p>
+                        <a href="https://www.linkedin.com/in/abhinav-k-subash-7a497a36b/details/projects/403093857/multiple-media-viewer/?profileId=ACoAAFvNWuwBuzFtLOaOV_Iqu5ok9fivA2OIdFw&treasuryMediaId=1750602267157">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>    
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>AI Imaage Generator</h3>
+                        <p>This web application helps generate images according to the prompt.</p>
+                        <a href="https://www.linkedin.com/in/abhinav-k-subash-7a497a36b/details/projects/405112406/multiple-media-viewer/?profileId=ACoAAFvNWuwBuzFtLOaOV_Iqu5ok9fivA2OIdFw&treasuryMediaId=1750604286655">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+  <!----------------------contact---------------------------->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>abhinavksubash@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9526633643</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#" download="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Abinav.</p>
+    </div>
+  </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFMK3H6HtJyLCDloZJM3PYMRYDBtxsQNjeEGqZz7gUl_p6vM85Uyu5AH3oqEmYE21r/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfuly !"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 </html>
